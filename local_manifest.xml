@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote name="blackshibe" fetch="https://github.com/blackshibe"/>
 	<remote name="newlineage" fetch="https://github.com/lineageos-on-pdx201"/>
-
-	<!-- lineageos on pdx201: android 14 -->
+	
 	<remove-project name="LineageOS/android_device_lineage_sepolicy" />
 	
-	<project path="device/sony/pdx201" name="android_device_sony_pdx201" remote="newlineage" branch="lineage-21" />
-	<project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="newlineage" branch="lineage-21.0" />
-	<project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="newlineage" branch="lineage-21.0-legacy-um" />
+	<project path="device/sony/pdx201" name="android_device_sony_pdx201" remote="newlineage" revision="lineage-21" />
+	<project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="newlineage" revision="lineage-21.0" />
+	<project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="newlineage" revision="lineage-21.0-legacy-um" />
 
-	<project path="kernel/sony/sm6125" name="android_kernel_sony_sm6125" remote="newlineage" branch="lineage-21" />
-	<project path="vendor/sony/pdx201" name="proprietary_vendor_sony_pdx201" remote="newlineage" branch="lineage-21" />
-	<project path="hardware/sony/" name="android_hardware_sony" remote="newlineage" branch="lineage-21" />
-
+	<project path="kernel/sony/sm6125" name="android_kernel_sony_sm6125" remote="newlineage" revision="lineage-21" />
+	<project path="hardware/sony/" name="android_hardware_sony" remote="newlineage" revision="lineage-21" />
+	
+	<!-- this vendor repo thankfully already has the proprietary files required to build -->
+	<project path="vendor/sony/pdx201" name="proprietary_vendor_sony_pdx201" remote="newlineage" revision="lineage-21" />
 </manifest>
