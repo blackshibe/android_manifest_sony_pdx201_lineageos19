@@ -4,7 +4,8 @@
 	<remote name="newlineage" fetch="https://github.com/lineageos-on-pdx201"/>
 
 	<!-- lineageos on pdx201: android 14 -->
-
+	<remove-project name="LineageOS/android_device_lineage_sepolicy" />
+	
 	<project path="device/sony/pdx201" name="android_device_sony_pdx201" remote="newlineage" branch="lineage-21" />
 	<project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="newlineage" branch="lineage-21.0" />
 	<project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="newlineage" branch="lineage-21.0-legacy-um" />
