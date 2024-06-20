@@ -3,7 +3,6 @@
 	<remote name="newlineage" fetch="https://github.com/lineageos-on-pdx201"/>
 	
 	<remove-project name="LineageOS/android_device_lineage_sepolicy" />
-	<remove-project name="LineageOS/android_hardware_sony" />
 	
 	<project path="device/sony/pdx201" name="android_device_sony_pdx201" remote="newlineage" revision="lineage-21" />
 	<project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="newlineage" revision="lineage-21.0" />
