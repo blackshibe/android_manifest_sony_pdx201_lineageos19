@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 	<remote name="newlineage" fetch="https://github.com/lineageos-on-pdx201"/>
+	<remote name="blackshibe" fetch="https://github.com/blackshibe"/>
 	
 	<remove-project name="LineageOS/android_device_lineage_sepolicy" />
 	
-	<project path="device/sony/pdx201" name="android_device_sony_pdx201" remote="newlineage" revision="lineage-21" />
+	<project path="device/sony/pdx201" name="android_device_sony_pdx201" remote="blackshibe" revision="lineage-21" />
 	<project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="newlineage" revision="lineage-21.0" />
 	<project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="newlineage" revision="lineage-21.0-legacy-um" />
 
